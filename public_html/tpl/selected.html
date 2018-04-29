@@ -1,0 +1,21 @@
+<div id="item" ng-controller="ItemController">
+  <div>
+    <h3>Price on site: {{curent_item.price}}$</h3>
+    <p><b>Name</b>:  {{curent_item.name}}</p>
+    <p><b>Color</b>:  {{curent_item.color}}</p> 
+    <p ng-if="curent_item.capacity"><b>Capacity</b>:  {{curent_item.capacity}}</p>
+  </div>
+  <div id="middle">
+    <div>
+      <p>{{curent_item.description}}</p>
+    </div>
+    <div>
+      <img ng-src="images/{{curent_item.image}}" alt="{{curent_item.name}}" align="right">
+    </div>
+  </div>
+  <div>
+    <div>
+      <p><a href="index.html" >Back to main</a></p>
+    </div>
+  </div>
+</div>

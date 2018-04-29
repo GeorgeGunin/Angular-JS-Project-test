@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html ng-app="shopModule" ng-controller="MainController">
+  <head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-touch.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div id="top">
+      <a href="#"><img src="images/toTop.png" id="up"></a>
+    </div>
+    <div class="wrapper">
+      <nav>
+        <div><a href="#!/contact"><img src="images/contact_btn.gif"></a></div>
+        <div><a href="#!/home"><img src="images/home_btn.gif"></a></div>
+        <div><a href="#!/about"><img src="images/about_btn.gif"></a></div>
+      </nav>
+      <header>
+        <div id="inpic"> 
+          <div id="info" ng-repeat="data in pictureArray" ng-swipe-right="showPrev()"
+               ng-swipe-left="showNext()" ng-show="isActive($index)">
+            <p class="blue">Price on site: {{data.price}}$</p>
+            <p class="white">{{data.name}}</p>
+            <div ng-controller="ItemController"   ng-click="$event.preventdefault()" class="curent">
+              <a href="#!/selected/{{data.itemID}}">MORE DETAILS</a>
+          </div>
+          </div>
+
+          <img class="curent_slide" ng-repeat=" pic in pictureArray" ng-swipe-right="showPrev()"
+                ng-swipe-left="showNext()" ng-show="isActive($index)" 
+                ng-src="{{pic.image}}"  align="right" >
+
+        </div>
+        <div id="slize">
+          <div>
+            <a href="#" ng-click="showPrev();$event.preventDefault();" ><img class="point" ng-src="images/point_left.png" align="center"></a>
+          </div>
+          <div id="slider">
+            <img ng-repeat="pic in pictureArray " ng-src="{{pic.image}}" ng-class="{'active':isActive($index)}" ng-click="showImage($index)">
+          </div>
+          <div>
+            <a href="#" ng-click="showNext();$event.preventDefault()"><img class="point" ng-src="images/point_right.png" align="center"></a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <ng-view></ng-view>
+      </main>
+      <footer>
+        <img src="images/logo_img.png"> <span>Copyright &copy;2017 Arima.All rights reserved.</span>
+      </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jscroll.js" type="text/javascript"></script>
+  </body>
+</html>

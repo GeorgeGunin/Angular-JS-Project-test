@@ -1,0 +1,93 @@
+[
+  {
+    "itemID":1,
+    "name": "Apple MackBook Pro 2016 with Touchbar",
+    "manufacture": "Apple",
+    "size": "16.7 inch",
+    "color": "grey",
+    "ram": "8GB",
+    "capacity": "500GB ssd",
+    "price": 1600,
+    "category": "Laptop",
+    "image": "mackbook.png",
+    "description": "Every Mac comes with a one-year limited warranty and up to 90 days of complimentary telephone technical support. AppleCare+ for Mac extends your coverage to three years from the original purchase date of your Mac and adds up to two incidents of accidental damage coverage, each subject to a service fee of $99 for screen damage or external enclosure damage, or $299 for other damage, plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone."
+  },
+  {
+    "itemID":2,
+    "name": "Apple all in One",
+    "manufacture": "Apple",
+    "size": "27.5 inch",
+    "color": "white smoke",
+    "ram": "8GB",
+    "capacity": "500GB ssd",
+    "price": 3600,
+    "category": "PC",
+    "image": "pc_image.png",
+    "description": "Every Mac comes with a one-year limited warranty and up to 90 days of complimentary telephone technical support. AppleCare+ for Mac extends your coverage to three years from the original purchase date of your Mac and adds up to two incidents of accidental damage coverage, each subject to a service fee of $99 for screen damage or external enclosure damage, or $299 for other damage, plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone."
+  },
+  {
+    "itemID":3,
+    "name": "Apple iPad",
+    "manufacture": "Apple",
+    "size": "12.5 inch",
+    "color": "white",
+    "ram": "64GB",
+    "capacity": "up to 512GB",
+    "price": 950,
+    "category": "Tablet",
+    "image": "tablet.png",
+    "description": "Every Mac comes with a one-year limited warranty and up to 90 days of complimentary telephone technical support. AppleCare+ for Mac extends your coverage to three years from the original purchase date of your Mac and adds up to two incidents of accidental damage coverage, each subject to a service fee of $99 for screen damage or external enclosure damage, or $299 for other damage, plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone."
+  },
+  {
+    "itemID":4,
+    "name": "Microsoft Surface Pro5 ",
+    "manufacture": "Microsoft",
+    "size": "14.1 inch",
+    "color": "black blue",
+    "ram": "4GB",
+    "capacity": "128Gb ssd",
+    "price": 900,
+    "category": "Laptop",
+    "image": "laptop_img.gif",
+    "description": "When you look at a Surface Pro, which starts at $799 (£799 or AU$1,199) for a Core m3 CPU, 4GB of RAM and a 128GB SSD, you have to think about what IT types call the TCO, or total cost of ownership. Even the base model Surface Pro, when you add the Pen and a basic black keyboard cover, comes out to $1,027, which frankly is a lot for a Core m3 laptop (although, to be fair, less than Apple charges for its Core m3 MacBook). The upgraded model tested here has a new Core i7 CPU, 16GB of RAM and a big 512GB SSD, which comes out to $2,199 (£2,149 or AU$3,299), and that's still without the keyboard or Pen."
+  },
+  {
+    "itemID":5,
+    "name": "Apple iPhone 7 plus",
+    "manufacture": "Apple",
+    "size": "5.7 inch",
+    "color": "black",
+    "ram": "32GB",
+    "capacity": "up to 512GB",
+    "price": 650,
+    "category": "SmartPhones",
+    "image": "smart_ph_img.png",
+    "description": "Every Mac comes with a one-year limited warranty and up to 90 days of complimentary telephone technical support. AppleCare+ for Mac extends your coverage to three years from the original purchase date of your Mac and adds up to two incidents of accidental damage coverage, each subject to a service fee of $99 for screen damage or external enclosure damage, or $299 for other damage, plus applicable tax. In addition, you'll get 24/7 priority access to Apple experts via chat or phone."
+  },
+  {
+    "itemID":6,
+    "name": "Tensaerlite",
+    "manufacture": "Tensaerlite",
+    "size": "15 inch",
+    "color": "grey",
+    "ram": "Tensaerlite Brief Bag",
+    "capacity": "",
+    "price": 90,
+    "category": "LaptopCases",
+    "image": "laptop_case_img.gif",
+    "description":"Incase Reform Colection With its sleek design and tactile materials the black and slate ICON Sleeve with TENSAERLITE for 13 MacBook Pro Retina from Incase not only looks great, but also protects your laptop from scratches, dirt and bumps. The lightweight Tensaerlite material is sewn into the sides of the form-fitted sleeve to serve as a bumper and shock protector. And for scratch protection, the interior is lined with faux-fur. For easy laptop insertion, the sleeve opens on one end with a magnetic snap closure. To charge your laptop while in the sleeve, simply insert with the charging port facing outward."
+  },
+  {
+    "itemID":7,
+    "name": "Bose SoundLink ",
+    "manufacture": "Bose",
+    "size": "Bluetooth speaker II",
+    "color": "grey",
+    "ram": "64GB",
+    "capacity": "",
+    "price": 85,
+    "category": "Speakers",
+    "image": "speacker_img.gif",
+    "description":"Don’t leave your music behind. Enjoy wireless freedom with the SoundLink Mini speaker II. Weighing in at just 1.5 pounds, it’s small and light enough to tuck into your bag. It has a low profile that lets you place it almost anywhere and provides a low center of gravity that makes it nearly impossible to tip over.Don’t let a long daytrip stop you from bringing a soundtrack—with up to 10 hours of battery life, you can have the playlist going all afternoon. And when you stay at home, the charging cradle lets you listen indefinitely while it charges the speaker so it’s always ready to grab and go."
+  }
+]

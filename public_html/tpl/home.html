@@ -1,0 +1,55 @@
+ <div class="searchCenter">
+      <div id="categories">
+        <h4>Category</h4>
+        <br>
+         <br>
+        <ul>
+          <li><input type="checkbox" ng-model="PC" ng-click="curentCategories()"><label>PC</label></li>
+          <li><input type="checkbox" ng-model="Tablet" ng-click="curentCategories()"><label>Tablet</label></li>
+          <li><input type="checkbox" ng-model="Laptop" ng-click="curentCategories()"><label>Laptop</label></li>
+          <li><input type="checkbox" ng-model="SmartPhones" ng-click="curentCategories()"><label>Smart Phones</label></li>
+          <li><input type="checkbox" ng-model="LaptopCases" ng-click="curentCategories()"><label>Laptop cases</label></li>
+          <li><input type="checkbox" ng-model="Speakers" ng-click="curentCategories()"><label>Speakers</label></li>
+        </ul>
+      </div>
+      
+      <div id="OrederBy">
+         <h4>Order by</h4>
+         <br>
+         <br>
+         <select ng-model="searchby" ng-change="clearPrice()" >
+           <option value="+name"  >Name</option>
+          <option value="+manufacture" ng-changed="clearPrice()">Manufacture</option>
+        </select>
+        <br>
+         <br>
+         <ul>
+           <li ng-click="priceSort('High to Low');$event.preventDefault()"><a href="#" class="">High to Low</a></li>
+           <li ng-click="priceSort('Low to High');$event.preventDefault()"><a href="#" class="">Low to High</a></li>
+         </ul>
+      </div>
+        
+        <div id="searchItem">
+          <div>
+          <input type="text" placeholder="search item" ng-model="search.name">
+          <img src="images/search_img.png" height="30" alt="searchIcon">
+          </div>
+        </div>
+      </div>
+<h1>Handpicked by our techies</h1>
+        <div class="mainview" ng-controller="HomeController">
+          
+          <div id="item_prop" ng-repeat="item in items | filter:search | orderBy:searchby">
+            <h3>Price on site: {{item.price}}$</h3>
+            
+            <p>Name:{{item.name}} {{item.capacity}}</p>
+            <p>Color:{{item.color}}</p>
+           
+            <div>
+            <img ng-src="images/{{item.image}}" alt="{{item.name}}" align="right">
+            </div>
+            <div class="curent" ng-click="$event.preventdefault()">
+              <a href="#!/selected/{{item.itemID}}">MORE DETAILS</a>
+          </div>
+        </div>
+        </div>
