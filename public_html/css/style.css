@@ -10,7 +10,7 @@
   max-width:800px;
   height: auto;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #cccccc;
   display: grid;
   grid-template:repeat(4,auto)/1fr;
 }
